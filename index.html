@@ -1,168 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>kvcabscalicut — Reliable Cab Service in Calicut</title>
-  <meta name="description" content="kvcabscalicut — local taxi and cab service in Calicut (Kozhikode). Book airport transfers, local rides and city tours." />
-  <meta name="theme-color" content="#0b6cff" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KVCabs Calicut | Your trusted travel desk</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    :root{
-      --bg:#f7f9ff; --card:#ffffff; --accent:#0b6cff; --muted:#6b7280; --radius:12px;
-      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    *{box-sizing:border-box}
-    body{margin:0; background:var(--bg); color:#0f1724; line-height:1.45}
-    .container{max-width:1100px; margin:2rem auto; padding:1rem}
-    header{display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:1.25rem}
-    .brand{display:flex; align-items:center; gap:.75rem; text-decoration:none; color:inherit}
-    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#4cc3ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
-    nav{display:flex; gap:1rem; align-items:center}
-    a.btn{background:var(--accent); color:#fff; padding:.55rem .9rem; border-radius:9px; text-decoration:none; font-weight:600}
-    .hero{display:grid; grid-template-columns:1fr 360px; gap:1.25rem; align-items:center; margin-bottom:1.25rem}
-    .card{background:var(--card); padding:1.25rem; border-radius:var(--radius); box-shadow:0 6px 18px rgba(10,20,40,0.06)}
-    h1{margin:0 0 .5rem; font-size:1.6rem}
-    p.lead{margin:0 0 1rem; color:var(--muted)}
-    .features{display:flex; gap:1rem; margin-top:.5rem; flex-wrap:wrap}
-    .feature{flex:1 1 160px; background:linear-gradient(180deg,#fff,#f6fbff); padding:.7rem; border-radius:10px; text-align:center; border:1px solid rgba(11,108,255,0.06)}
-    .booking form{display:flex; flex-direction:column; gap:.5rem}
-    input, select, textarea{width:100%; padding:.6rem .7rem; border-radius:9px; border:1px solid #e6eefc; outline:none; font:inherit}
-    input[type="submit"]{background:var(--accent); color:#fff; cursor:pointer; border:none; font-weight:600}
-    .services{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; margin:1rem 0}
-    footer{margin-top:2rem; text-align:center; color:var(--muted); font-size:.9rem; padding:1rem 0}
-    @media (max-width:880px){
-      .hero{grid-template-columns:1fr; }
-      nav{display:none}
-    }
+    body { font-family: "Poppins", sans-serif; }
   </style>
 </head>
-<body>
-  <div class="container">
-    <header>
-      <a class="brand" href="#">
-        <div class="logo" aria-hidden="true">KV</div>
-        <div>
-          <div style="font-weight:700">kvcabscalicut</div>
-          <div style="font-size:.82rem;color:var(--muted)">Reliable cabs — Calicut (Kozhikode)</div>
-        </div>
-      </a>
-      <nav>
-        <a href="#services">Services</a>
-        <a href="#rates">Rates</a>
-        <a href="#contact" class="btn">Book Now</a>
+
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Navigation -->
+  <header class="w-full fixed top-0 left-0 bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-yellow-600">KvCabs</div>
+      <nav class="hidden md:flex space-x-8 font-medium">
+        <a href="#services" class="hover:text-yellow-600">Services</a>
+        <a href="#pricing" class="hover:text-yellow-600">Pricing</a>
+        <a href="#contact" class="hover:text-yellow-600">Contact</a>
       </nav>
-    </header>
+      <a href="tel:+919567890000" class="md:hidden bg-yellow-500 text-white px-4 py-2 rounded-lg shadow hover:bg-yellow-600">
+        Call Now
+      </a>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero">
-        <div class="card">
-          <h1>Safe, timely and convenient cab service in Calicut</h1>
-          <p class="lead">Local taxis, airport transfers, outstation trips and city tours. Affordable fixed rates and trained drivers available 24/7.</p>
+  <!-- Hero Section -->
+  <section class="pt-24">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center px-6 py-12 gap-10">
+      
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-snug">
+          Reliable & Affordable <span class="text-yellow-600">Taxi Service</span> in Calicut
+        </h1>
+        <p class="text-gray-700 text-lg mb-6">
+          Book safe and comfortable rides with professional drivers.  
+          24/7 Airport, Outstation & Local Taxi Service in Kozhikode.
+        </p>
 
-          <div class="features" aria-hidden="false">
-            <div class="feature">
-              <strong>24/7 Service</strong>
-              <div style="color:var(--muted);font-size:.9rem">Anytime pickups & drops</div>
-            </div>
-            <div class="feature">
-              <strong>Airport Transfers</strong>
-              <div style="color:var(--muted);font-size:.9rem">Punctual flight tracking</div>
-            </div>
-            <div class="feature">
-              <strong>Transparent Rates</strong>
-              <div style="color:var(--muted);font-size:.9rem">No hidden charges</div>
-            </div>
-          </div>
+        <div class="flex space-x-4">
+          <a href="tel:+919567890000"
+             class="bg-yellow-500 text-white px-6 py-3 rounded-lg shadow hover:bg-yellow-600 font-medium">
+            Call Now
+          </a>
 
-          <div style="margin-top:1rem; display:flex; gap:.5rem;">
-            <a href="#contact" class="btn">Book a Ride</a>
-            <a href="#services" style="padding:.55rem .9rem;border-radius:9px;text-decoration:none;color:var(--accent);border:1px solid rgba(11,108,255,0.12)">View Services</a>
-          </div>
+          <a href="#pricing" 
+             class="bg-white border border-gray-300 px-6 py-3 rounded-lg shadow hover:bg-gray-100 font-medium">
+            View Pricing
+          </a>
+        </div>
+      </div>
+
+      <img src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg"
+           class="rounded-xl shadow-xl w-full" alt="Taxi Banner"/>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-12">Our Services</h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg">
+          <img src="https://images.pexels.com/photos/980000/pexels-photo-980000.jpeg" class="rounded-md mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Airport Taxi</h3>
+          <p class="text-gray-700">On-time pickup & drop from Calicut International Airport.</p>
         </div>
 
-        <aside class="card booking" aria-labelledby="booking-heading">
-          <h2 id="booking-heading" style="margin-top:0;font-size:1.05rem">Quick Booking</h2>
-          <form id="bookingForm" onsubmit="submitBooking(event)" novalidate>
-            <label for="pickup" style="font-size:.9rem;color:var(--muted)">Pickup</label>
-            <input id="pickup" name="pickup" placeholder="Pickup address or landmark" required>
-
-            <label for="drop" style="font-size:.9rem;color:var(--muted)">Drop</label>
-            <input id="drop" name="drop" placeholder="Drop address or landmark" required>
-
-            <label for="date" style="font-size:.9rem;color:var(--muted)">Date & Time</label>
-            <input id="date" name="date" type="datetime-local" required>
-
-            <label for="vehicle" style="font-size:.9rem;color:var(--muted)">Vehicle</label>
-            <select id="vehicle" name="vehicle">
-              <option>Hatchback</option>
-              <option>Sedan</option>
-              <option>SUV</option>
-              <option>Tempo Traveller</option>
-            </select>
-
-            <input type="submit" value="Request Quote">
-            <div id="bookingMsg" role="status" style="font-size:.9rem;color:var(--muted);margin-top:.5rem;display:none"></div>
-          </form>
-        </aside>
-      </section>
-
-      <section id="services" class="card" aria-labelledby="services-heading">
-        <h2 id="services-heading" style="margin-top:0">Our Services</h2>
-        <div class="services">
-          <div>
-            <strong>Local Rides</strong>
-            <div style="color:var(--muted);font-size:.9rem">Hourly and point-to-point</div>
-          </div>
-          <div>
-            <strong>Airport Transfers</strong>
-            <div style="color:var(--muted);font-size:.9rem">Pickups to and from Calicut Airport</div>
-          </div>
-          <div>
-            <strong>Outstation</strong>
-            <div style="color:var(--muted);font-size:.9rem">Day trips and multi-day journeys</div>
-          </div>
-          <div>
-            <strong>Tour Packages</strong>
-            <div style="color:var(--muted);font-size:.9rem">Custom sightseeing itineraries</div>
-          </div>
+        <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg">
+          <img src="https://images.pexels.com/photos/210182/pexels-photo-210182.jpeg" class="rounded-md mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Outstation Rides</h3>
+          <p class="text-gray-700">Book round-trip & one-way rides anywhere in Kerala.</p>
         </div>
-      </section>
 
-      <section id="rates" class="card" style="margin-top:1rem">
-        <h2 style="margin-top:0">Rates & Policies</h2>
-        <p style="margin:0;color:var(--muted)">Competitive rates. Exact fare depends on distance, vehicle type and traffic. Contact us for transparent pricing before you ride.</p>
-      </section>
+        <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg">
+          <img src="https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg" class="rounded-md mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Local Taxi</h3>
+          <p class="text-gray-700">Hourly & full-day cab services inside Calicut city.</p>
+        </div>
 
-      <section id="contact" class="card" style="margin-top:1rem">
-        <h2 style="margin-top:0">Contact & Booking</h2>
-        <p style="margin:.25rem 0;color:var(--muted)">Phone: <a href="tel:+911234567890">+91 12345 67890</a> • Email: <a href="mailto:info@kvcabscalicut.example">info@kvcabscalicut.example</a></p>
-        <p style="margin:.25rem 0;color:var(--muted)">Office: Calicut / Kozhikode</p>
-      </section>
-    </main>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-      <div>© <span id="year"></span> kvcabscalicut — All rights reserved</div>
-    </footer>
-  </div>
+  <!-- Pricing -->
+  <section id="pricing" class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-12">Affordable Pricing</h2>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+      <div class="grid md:grid-cols-3 gap-10">
 
-    function submitBooking(e){
-      e.preventDefault();
-      var form = e.target;
-      var msg = document.getElementById('bookingMsg');
-      if(!form.checkValidity()){ msg.style.display='block'; msg.textContent='Please fill required fields.'; return; }
-      msg.style.display='block';
-      msg.textContent = 'Sending request…';
-      // Placeholder: replace with actual fetch to backend or email API
-      setTimeout(function(){
-        msg.textContent = 'Request submitted. We will contact you shortly to confirm.';
-        form.reset();
-      }, 900);
-    }
-  </script>
+        <!-- Package 1 -->
+        <div class="bg-white rounded-xl shadow p-8 hover:shadow-xl border">
+          <h3 class="text-2xl font-semibold mb-4">Sedan Taxi</h3>
+          <!-- <p class="text-4xl font-bold text-yellow-600 mb-4">₹13 / km</p> -->
+          <p class="mb-6 text-gray-600">Dzire • Etios • Xcent</p>
+          <a href="tel:+919567890000" class="block bg-yellow-500 text-white py-3 rounded-lg font-medium hover:bg-yellow-600">
+            Book Now
+          </a>
+        </div>
+
+        <!-- Package 2 -->
+        <div class="bg-white rounded-xl shadow p-8 hover:shadow-xl border">
+          <h3 class="text-2xl font-semibold mb-4">SUV Taxi</h3>
+          <!-- <p class="text-4xl font-bold text-yellow-600 mb-4">₹18 / km</p> -->
+          <p class="mb-6 text-gray-600">Ertiga • Innova • Carens</p>
+          <a href="tel:+919567890000" class="block bg-yellow-500 text-white py-3 rounded-lg font-medium hover:bg-yellow-600">
+            Book Now
+          </a>
+        </div>
+
+        <!-- Package 3 -->
+        <div class="bg-white rounded-xl shadow p-8 hover:shadow-xl border">
+          <h3 class="text-2xl font-semibold mb-4">Traveller</h3>
+          <!-- <p class="text-4xl font-bold text-yellow-600 mb-4">₹28 / km</p> -->
+          <p class="mb-6 text-gray-600">13 / 17 / 26 Seater</p>
+          <a href="tel:+919567890000" class="block bg-yellow-500 text-white py-3 rounded-lg font-medium hover:bg-yellow-600">
+            Book Now
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+      <p class="text-gray-700 mb-6">
+        Book your ride anytime. We’re available 24/7.
+      </p>
+
+      <p class="text-lg font-medium">
+        📞 <a href="tel:+919567890000" class="text-yellow-600 underline">+91 80753 41274</a>
+      </p>
+      <p class="text-lg font-medium mt-2">
+        📍 Calicut, Kerala
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p>© 2025 KVCabs Calicut. All Rights Reserved.</p>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/918075341274"
+     class="fixed bottom-6 right-6 bg-green-500 text-white px-4 py-3 rounded-full shadow-xl flex items-center space-x-2 hover:bg-green-600">
+    <span>WhatsApp</span>
+  </a>
+
 </body>
-</html></form></div>
+</html>
